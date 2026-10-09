@@ -1,0 +1,28 @@
+server:
+  port: 8101
+spring:
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "${MYSQL_URL:jdbc:mysql://127.0.0.1:3307/yubi?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai}"
+    username: "${MYSQL_USER}"
+    password: "${MYSQL_PASSWORD}"
+  # Redis 配置
+  # todo 需替换配置
+  redis:
+    database: 1
+    host: "${REDIS_HOST:127.0.0.1}"
+    port: "${REDIS_PORT:6380}"
+    timeout: 5000
+    password: "${REDIS_PASSWORD:}"
+  # Elasticsearch 配置
+  # todo 需替换配置
+  elasticsearch:
+    uris: "${ELASTICSEARCH_URIS:http://127.0.0.1:9200}"
+    username: "${ELASTICSEARCH_USERNAME:}"
+    password: "${ELASTICSEARCH_PASSWORD:}"
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''

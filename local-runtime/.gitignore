@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+logs/
+private/
+.tmp/

@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/${MYSQL_DATABASE:yubi}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6380
+    password: ${REDIS_PASSWORD}
+    timeout: 5000
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5673
+    username: ${RABBITMQ_DEFAULT_USER}
+    password: ${RABBITMQ_DEFAULT_PASS}
+    virtual-host: ${RABBITMQ_DEFAULT_VHOST}
+server:
+  address: 127.0.0.1
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        name: YUBISESSION
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+yuapi:
+  client:
+    access-key: ${YUCONGMING_ACCESS_KEY:}
+    secret-key: ${YUCONGMING_SECRET_KEY:}
+bi:
+  ai:
+    enabled: ${BI_AI_ENABLED:false}
+    model-id: ${YUCONGMING_MODEL_ID:0}

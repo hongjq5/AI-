@@ -1,0 +1,12 @@
+Historical result from the development environment on 2026-10-01.
+Not rerun as part of publication sanitization on 2026-10-04.
+Raw logs and personal runtime data are not included.
+
+Suite: com.yupi.springbootinit.bizmq.BiMessageConsumerTest | Tests: 29 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.bizmq.BiMessageProducerTest | Tests: 1 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.config.BiMqConfigTest | Tests: 1 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.config.RedissonConfigTest | Tests: 3 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.controller.ChartControllerTest | Tests: 26 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.manager.AiManagerBoundaryTest | Tests: 10 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.utils.ChartFileUtilsTest | Tests: 11 | Failures: 0 | Errors: 0
+Suite: com.yupi.springbootinit.utils.ExcelUtilsTest | Tests: 13 | Failures: 0 | Errors: 0
