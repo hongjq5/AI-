@@ -1,6 +1,5 @@
 # AI 数据分析与可视化平台
 
-**基于鱼皮智能 BI 教学项目二次开发**。上游作者：[程序员鱼皮](https://github.com/liyupi)，保留原始源码署名和 [后端原始说明](docs/upstream-backend-readme.md)、[前端原始说明](docs/upstream-frontend-readme.md)。本版本用于学习、个人作品整理与本地演示，下文描述当前实现，不等同于独立原创声明或生产压测结果。
 
 面向个人表格分析的工作台：上传 Excel，描述分析需求，提交任务，再查看图表、分析结论和处理状态。前端采用 React + Umi + Ant Design，后端采用 Spring Boot + MyBatis-Plus；通过 RabbitMQ 执行异步分析，使用 Redis / Redisson 控制用户提交频率。
 
